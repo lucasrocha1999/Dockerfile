@@ -62,7 +62,7 @@ Por fim, falta dizermos onde os comandos rodarão, pois eles devem ser executado
 `MAINTAINER Lucas Lira`  
 `COPY . /var/www`  
 `WORKDIR /var/www`  
-`RUN npm install`
+`RUN npm install`  
 `ENTRYPOINT npm start`  
 `EXPOSE 3000`
 
@@ -80,7 +80,7 @@ Além disso, passamos a tag da imagem, o seu nome, através da flag -t. Já vimo
 
 E agora dizemos onde está o Dockerfile. Como já estamos rodando o comando dentro da pasta volume-exemplo, vamos utilizar o ponto (.);
 
-`docker build -f Dockerfile -t douglasq/node .`
+`docker build -f Dockerfile -t lucaslira/node .`
 
 ## Criando um container a partir da nossa imagem
 
